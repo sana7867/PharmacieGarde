@@ -16,7 +16,7 @@ public class UsersService implements IDao<Users> {
 	private UserRepository us;
 	
 	@Override
-	public Users craete(Users o) {
+	public Users create(Users o) {
 		// TODO Auto-generated method stub
 		return us.save(o);
 	}

@@ -17,7 +17,7 @@ public class PharmacieService implements IDao<Pharmacie> {
 	private PharmacieRepository pr;
 	
 	@Override
-	public Pharmacie craete(Pharmacie o) {
+	public Pharmacie create(Pharmacie o) {
 		// TODO Auto-generated method stub
 		return pr.save(o);
 	}

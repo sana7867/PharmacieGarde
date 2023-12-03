@@ -16,7 +16,7 @@ public class VilleService implements IDao<Ville> {
 	private VilleRepository vr;
 	
 	@Override
-	public Ville craete(Ville o) {
+	public Ville create(Ville o) {
 		// TODO Auto-generated method stub
 		return vr.save(o);
 	}

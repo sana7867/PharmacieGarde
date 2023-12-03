@@ -17,7 +17,7 @@ public class GardeService implements IDao<Garde> {
 	private GardeRepository gr;
 	
 	@Override
-	public Garde craete(Garde o) {
+	public Garde create(Garde o) {
 		// TODO Auto-generated method stub
 		return gr.save(o);
 	}

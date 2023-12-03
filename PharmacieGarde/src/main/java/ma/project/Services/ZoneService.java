@@ -16,7 +16,7 @@ public class ZoneService implements IDao<Zone> {
 	private ZoneRepository zr;
 	
 	@Override
-	public Zone craete(Zone o) {
+	public Zone create(Zone o) {
 		// TODO Auto-generated method stub
 		return zr.save(o);
 	}

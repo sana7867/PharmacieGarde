@@ -2,34 +2,36 @@ package ma.project.Services;
 
 import java.util.List;
 
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import ma.project.dao.IDao;
-import ma.project.entities.Pharmacie_garde;
-import ma.project.repositories.Pharmacie_gardeRepository;
+import ma.project.entities.PharmacieGarde;
+import ma.project.repositories.PharmacieGardeRepository;
 
 @Service
-public class Pharmacie_gardeService implements IDao<Pharmacie_garde> {
+public class PharmacieGardeService implements IDao<PharmacieGarde> {
 
 	@Autowired
-	private Pharmacie_gardeRepository pgr;
+	private PharmacieGardeRepository pgr;
 	
 	@Override
-	public Pharmacie_garde craete(Pharmacie_garde o) {
+	public PharmacieGarde create(PharmacieGarde o) {
 		
 		// TODO Auto-generated method stub
 		return pgr.save(o);
 	}
 
 	@Override
-	public Pharmacie_garde update(Pharmacie_garde o) {
+	public PharmacieGarde update(PharmacieGarde o) {
 		// TODO Auto-generated method stub
 		return pgr.save(o);
 	}
 
 	@Override
-	public boolean delete(Pharmacie_garde o) {
+	public boolean delete(PharmacieGarde o) {
 		 try {
 	            pgr.delete(o);
 	            return true;
@@ -39,13 +41,13 @@ public class Pharmacie_gardeService implements IDao<Pharmacie_garde> {
 	}
 
 	@Override
-	public List<Pharmacie_garde> findAll() {
+	public List<PharmacieGarde> findAll() {
 		// TODO Auto-generated method stub
 		return pgr.findAll();
 	}
 
 	@Override
-	public Pharmacie_garde findById(Long id) {
+	public PharmacieGarde findById(Long id) {
 		// TODO Auto-generated method stub
 		return pgr.findById(id).orElse(null);
 	}
